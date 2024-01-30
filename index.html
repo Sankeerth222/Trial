@@ -1,48 +1,139 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Glassmorphism Navbar</title>
+
     <!-- CSS File  -->
+
     <link rel="stylesheet" href="style.css">
+
     <!-- Bootstrap Icons  -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
+
 <body>
+
     <nav class="navbar">
+
         <div class="container">
+
             <a href="#" class="logo">
-                LOGO
+
+            efootball derby
+
             </a>
+
             <ul>
+
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Plans</a></li>
+
+                <li><a href="#">fixtures </a></li>
+
+                <li><a href="#">table</a></li>
+
+                <li><a href="#">news</a></li>
+
             </ul>
+
             <div class="links">
-                <a href="#" class="active">Sign up</a>
-                <a href="#">Login</a>
+
+                <a href="https://docs.google.com/forms/d/1EUkXEhV2IYZKP3FO1ExWW4cuAfMdbP1FmBuWECCYb10/edit?usp=drivesdk" class="active">Register</a>
+
+
+
             </div>
+
             <button class="bi bi-list menu-button"></button>
+
         </div>
+
     </nav>
 
+
+
     <script>
+
         const headerRect = document.querySelector(".container").getBoundingClientRect();
+
         const button = document.querySelector(".menu-button")
 
+
+
         button.addEventListener("click", (event) => {
+
             var navbar = document.querySelector(".navbar");
+
             if (navbar.style.height) {
+
                 navbar.style.height = null;
+
                 event.target.classList.replace("bi-x", "bi-list");
+
             } else {
+
                 navbar.style.height = `${headerRect.height + 60}px`;
+
                 event.target.classList.replace("bi-list", "bi-x");
+
             }
+
         })
+
     </script>
+
+    <main class="container">
+
+
+
+        <div class="page-content">
+
+
+
+            <div class="inner-content">
+
+                <h2 class="heading">Efootball Derby</h2>
+
+                <p>This is the official website of Royalkings thayineri. Using this website we conducte esports tournaments based on the popular games like efootball and freefire </p>
+
+                <div class="buttons">
+
+                    <a href="#" class="active">Learn more</a>
+
+                 
+
+                </div>
+
+
+
+                <div class="social-links">
+
+                    <a href="#" class="bi bi-facebook" ></a>
+
+                      <a href="https://chat.whatsapp.com/BNUGG4jbll1Bk1ApeHySVW" class="bi bi-whatsapp" ></a>
+
+                    <a href="#" class="bi bi-youtube" ></a>
+
+                    <a href="https://www.instagram.com/neymar_jr_fan_boy_10?igsh=YTQwZjQ0NmI0OA==" class="bi bi-instagram" ></a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
 </body>
-</html>
+
+    </html>
